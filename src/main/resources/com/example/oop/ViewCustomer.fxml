@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop.controller.ViewCustomerUIController">
+   <children>
+      <Label layoutX="102.0" layoutY="14.0" text="VIEW CUSTOMER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="86.0" text="Name:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="23.0" layoutY="115.0" text="Email:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="21.0" layoutY="141.0" text="Phone:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="23.0" layoutY="176.0" text="Address:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="26.0" layoutY="210.0" text="Username:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="24.0" layoutY="56.0" text="Id:" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="24.0" layoutY="242.0" text="CardNo:" AnchorPane.leftAnchor="30.0" />
+      <Label fx:id="idLabel" layoutX="102.0" layoutY="56.0" text="Not found" />
+      <Label fx:id="nameLabel" layoutX="102.0" layoutY="86.0" text="Not found" />
+      <Label fx:id="emailLabel" layoutX="102.0" layoutY="115.0" text="Not found" />
+      <Label fx:id="phoneLabel" layoutX="102.0" layoutY="141.0" text="Not found" />
+      <Label fx:id="addressLabel" layoutX="102.0" layoutY="176.0" text="Not found" />
+      <Label fx:id="usernameLabel" layoutX="102.0" layoutY="210.0" text="Not found" />
+      <Label fx:id="cardLabel" layoutX="102.0" layoutY="242.0" text="Not found" />
+   </children>
+</AnchorPane>
