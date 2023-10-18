@@ -7,17 +7,19 @@ public class Account {
     private String account_title;
     private String status;
     private int bankCode;
+    private int customerId;
 
     public Account() {
     }
 
-    public Account(String number, float balance, String description, String account_title, String status, int bankCode) {
+    public Account(String number, String description, String account_title, String status, int bankCode, int customerId) {
         this.number = number;
-        this.balance = balance;
+        this.balance = 0;
         this.description = description;
         this.account_title = account_title;
         this.status = status;
         this.bankCode = bankCode;
+        this.customerId = customerId;
     }
 
     public String getNumber() {
@@ -70,5 +72,13 @@ public class Account {
 
     public void viewAccount() {
 
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 }

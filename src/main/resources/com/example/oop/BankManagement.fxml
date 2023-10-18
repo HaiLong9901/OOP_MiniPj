@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -35,9 +36,9 @@
                                     <TableColumn fx:id="customerRemoveBtn" prefWidth="88.0" text="Remove" />
                                 </columns>
                               </TableView>
-                              <Button fx:id="addCustomerBtn" mnemonicParsing="false" text="Add customer" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" onMouseClicked="#showAddCustomerLayout"/>
+                              <Button fx:id="addCustomerBtn" mnemonicParsing="false" onMouseClicked="#showAddCustomerLayout" text="Add customer" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
                               <TextField fx:id="searchCusInput" layoutY="10.0" prefHeight="26.0" prefWidth="166.0" promptText="Enter custumer's username" />
-                              <Button fx:id="searchCusBtn" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" text="Search" onMouseClicked="#onSearchCustomer"/>
+                              <Button fx:id="searchCusBtn" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onSearchCustomer" text="Search" />
                            </children>
                         </AnchorPane>
                         <AnchorPane fx:id="accLayout" layoutX="125.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
@@ -45,13 +46,23 @@
                               <TableView fx:id="accTable" layoutX="104.0" layoutY="22.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                                  <columns>
                                     <TableColumn fx:id="accNumCol" prefWidth="83.20001220703125" text="Number" />
-                                    <TableColumn fx:id="accTitCol" prefWidth="84.79998779296875" text="Title" />
-                                    <TableColumn fx:id="accStsCol" prefWidth="96.800048828125" text="Status" />
-                                    <TableColumn fx:id="accViewCol" prefWidth="80.79998779296875" text="View" />
-                                    <TableColumn fx:id="accCalCol" prefWidth="90.4000244140625" text="Cal" />
+                                    <TableColumn fx:id="accTitCol" prefWidth="91.20001220703125" text="Title" />
+                                    <TableColumn fx:id="accViewCol" prefWidth="87.20001220703125" text="View" />
+                                    <TableColumn fx:id="accCalCol" prefWidth="85.5999755859375" text="Cal" />
+                                    <TableColumn fx:id="accRemoveCol" prefWidth="84.800048828125" text="Remove" />
                                  </columns>
                               </TableView>
-                              <Button fx:id="addAccBtn" mnemonicParsing="false" onMouseClicked="#showAddCustomerLayout" text="Add account" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                              <Button fx:id="addAccBtn" mnemonicParsing="false" onMouseClicked="#showAddAccountLayout" text="Add account" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                              <TextField fx:id="searchAccInput" layoutY="9.0" prefHeight="26.0" prefWidth="166.0" promptText="Enter account's number" />
+                              <Button fx:id="searchAccBtn" layoutX="166.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onSearchAcc" text="Search" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="transLayout" layoutX="135.0" layoutY="120.0" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Button fx:id="transBtn" layoutX="156.0" layoutY="204.0" mnemonicParsing="false" onMouseClicked="#transfer" text="Transfer" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="204.0" />
+                              <TextField fx:id="transAccInput" layoutX="133.0" layoutY="63.0" prefHeight="26.0" prefWidth="166.0" promptText="Enter account's number" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                              <TextField fx:id="transAmtInput" layoutX="133.0" layoutY="107.0" promptText="Enter amount of money" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                              <ComboBox fx:id="transTypeInput" layoutX="49.0" layoutY="149.0" prefWidth="150.0" promptText="Chose type of transition" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="51.0" />
                            </children>
                         </AnchorPane>
                      </children>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop.controller.AddAccountUIController">
+    <children>
+        <Label layoutX="113.0" layoutY="24.0" text="ADD ACCOUNT">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="82.0" text="Number" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="31.0" layoutY="113.0" text="Desc" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="31.0" layoutY="146.0" text="Title" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="31.0" layoutY="178.0" text="Status" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="28.0" layoutY="212.0" text="Type" AnchorPane.leftAnchor="30.0" />
+        <Label layoutX="29.0" layoutY="241.0" text="Bank" AnchorPane.leftAnchor="29.0" />
+        <TextField fx:id="numberInput" layoutX="106.0" layoutY="78.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+        <TextField fx:id="descInput" layoutX="107.0" layoutY="109.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+        <TextField fx:id="titInput" layoutX="107.0" layoutY="142.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+        <TextField fx:id="statusInput" layoutX="106.0" layoutY="174.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+        <TextField fx:id="bankNameInput" layoutX="108.0" layoutY="238.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+        <Button fx:id="addBtn" layoutX="100.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#addAccount" text="Add Account" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <Label layoutX="28.0" layoutY="276.0" text="Code" AnchorPane.leftAnchor="30.0" />
+      <Label layoutX="30.0" layoutY="310.0" text="Address" AnchorPane.leftAnchor="30.0" />
+      <TextField fx:id="bankCodeInput" layoutX="100.0" layoutY="272.0" prefHeight="26.0" prefWidth="270.0" />
+      <TextField fx:id="bankAddressInput" layoutX="100.0" layoutY="306.0" prefHeight="26.0" prefWidth="270.0" />
+      <ComboBox fx:id="typeBox" layoutX="100.0" layoutY="206.0" prefWidth="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="30.0" layoutY="341.0" text="UserId" AnchorPane.leftAnchor="30.0" />
+      <ComboBox fx:id="userIdBox" layoutX="100.0" layoutY="339.0" prefWidth="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="30.0" layoutY="378.0" text="Interest" />
+      <TextField fx:id="interestInput" layoutX="100.0" layoutY="374.0" prefHeight="26.0" prefWidth="270.0" />
+    </children>
+</AnchorPane>
